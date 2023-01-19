@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ascii-Art Web</title>
+  <link href="../style/style.css" rel="stylesheet" type="text/css">
+  </head>
+<body >
+  <div class="c1">
+  <article class="article article_bluebg article_second">
+  <p1>ASCII
+    <br>ART<br>
+    WEB</p1>
+<br><br>
+<p2>{{ .Desc}}</p2>
+<br><br>
+<br><br>
+<form method = "POST" action="/ascii-art" class="form">
+  <textarea class="form_textarea" placeholder="Your text..." name="message" rows="15" cols="200"></textarea>
+  <br><br>
+  <select class="form_button" name="style">
+  <option  value="standard" name = "standard">standard</option>
+  <option  value="thinkertoy" name = "thinkertoy">thinkertoy</option>
+  <option value="shadow" name = "shadow">shadow</option>
+</select>
+<br><br>
+<input class="form_button" type="submit" value="CONVERT">
+</form>
+<br><br>
+<center>
+<div class="hello"><pre>{{ .Out}}</pre></div>
+</center>
+</article>
+</div>
+</body>
+</html>

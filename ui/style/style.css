@@ -1,0 +1,218 @@
+@keyframes header_anim {
+    from {
+      transform: translateX(-120%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+
+p1 {
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+p2 {
+    color: white;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.article {
+    position: relative;
+    min-height: 100vh;
+    padding: 8px 50px;
+}
+ 
+.article_bluebg::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content:'';
+}
+
+.article_bluebg::before {
+    background: none;
+}
+ 
+.form {
+    position: relative;
+    width: 780px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form_input,
+.form_textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  transition: transform 0.3s ease-out;
+  color: rgb(32, 35, 56);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.form_input::-webkit-input-placeholder,
+.form_textarea::-webkit-input-placeholder {
+  opacity: 0.6;
+  color: rgb(228, 229, 236);
+}
+
+.form_input:focus,
+.form_textarea:focus {
+  transition: transform 0.3s ease-out;
+  transform: scale(1.02, 1.02);
+}
+
+.form_textarea {
+  resize: none;
+}
+
+.form_button {
+  display: inline-block;
+  padding: 12px 32px;
+  transition: all 0.3s ease-out;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: rgb(41, 41, 41);
+  background-clip: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.form_button:hover {
+  transition: all 0.3s ease-out;
+  transform: scale(1.02, 1.02);
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 16px 2px;
+}
+
+body {
+  background-color: #222;
+}
+.hello{
+  color: rgb(255, 255, 255);
+  overflow-x: auto;
+  margin-bottom: 12px;
+  height: 400 px; 
+  transition: transform 0.3s ease-out;
+  transform: scale(1.02, 1.02);
+ 
+}
+
+@media (max-width: 700px) {
+.hello {
+    font-size: 0.8em;
+}
+  .form {
+      display: block;
+      text-align: center;
+      width: 250px;
+}
+  .form {
+      display: block;
+      text-align: center;
+      width: 250px;
+}
+  .form_button {
+    padding: 6px 10px;
+    font-size: 1em;
+}
+  
+  .form_textarea {
+    font-size: 1em;
+}
+
+p1 {
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+p2 {
+    position: relative;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+}
+
+@media screen and (min-width: 700px) {
+.hello {
+    font-size: 0.8em;
+}
+.form {
+      display: block;
+      text-align: center;
+      width: 100%;
+}
+.form_button {
+    padding: 6px 10px;
+    font-size: 1em;
+}
+.form_textarea {
+    font-size: 1em;
+}
+p1 {
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+p2 {
+    color: white;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+}
+
+@media screen and (min-width: 992px) {
+.form {
+      display: block;
+      text-align: center;
+      width: 780px;
+}
+.form_button {
+    padding: 6px 10px;
+    font-size: 1.5em;
+}
+.form_textarea {
+    font-size: 1.5em;
+}
+p1 {
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+p2 {
+    color: white;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+}
+}
